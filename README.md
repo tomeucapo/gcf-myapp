@@ -90,7 +90,10 @@ APP_NAME=Personal
 
 ## Application properties file
 
-You need configure application properties like database connection, cache, ... into cfg/properties_<env>.ini file:
+The configuration file is structured with different sections: general, jobserver, cache, auth, tserver, ...
+The application expects to find the configuration by considering the `APPS_ENVIRONMENT_CONF`, `APP_NAME` and `APPS_ENVIRONMENT_ID` variables.
+
+`<APPS_ENVIRONMENT_CONF>/<APP_NAME>/properties_<APPS_ENVIRONENT_ID>.ini`
 
 ```
 ; General configuration
