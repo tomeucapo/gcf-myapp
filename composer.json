@@ -1,0 +1,27 @@
+{
+    "name": "tomeu/myapp",
+    "description": "Example application",
+    "type": "project",
+    "license": "GPL",
+
+    "require": {
+        "phiconsultors/gcf": "dev-master"
+    },
+    "authors": [
+        {
+            "name": "Tomeu Capó",
+            "email": "tomeucapo@gmail.com"
+        }
+    ],
+
+    "autoload": {
+        "psr-4": {
+            "Data\\": "data/",
+            "frontal\\": "frontal/",
+            "app\\": "app/"
+        }
+    },
+
+    "minimum-stability": "stable"
+
+}
